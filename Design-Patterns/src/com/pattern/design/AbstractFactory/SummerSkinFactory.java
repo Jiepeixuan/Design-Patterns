@@ -2,23 +2,23 @@ package com.pattern.design.AbstractFactory;
 
 
 /**
-* <p>Title: SummerSkinFactory</p>
-* <p>Description: SummerÆ¤·ô¹¤³§£º¾ßÌå¹¤³§ </p> 
-* @author peixuan.xie
-* @date 2017Äê5ÔÂ26ÈÕÏÂÎç4:59:36
-*/
+ * <p>Title: SummerSkinFactory</p>
+ * <p>Description: Summerçš®è‚¤å·¥å‚ï¼šå…·ä½“å·¥å‚ </p>
+ * @author peixuan.xie
+ * @date 2017å¹´5æœˆ26æ—¥ä¸‹åˆ4:59:36
+ */
 public class SummerSkinFactory implements SkinFactory{
 
-	public Button createButton() {  
-        return new SummerButton();  
-    }  
+    public Button createButton() {
+        return new SummerButton();
+    }
 
-    public TextField createTextField() {  
-        return new SummerTextField();  
-    }  
+    public TextField createTextField() {
+        return new SummerTextField();
+    }
 
-    public ComboBox createComboBox() {  
-        return new SummerComboBox();  
-    }  
+    public ComboBox createComboBox() {
+        return new SummerComboBox();
+    }
 
 }

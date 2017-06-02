@@ -2,7 +2,7 @@ package com.pattern.design.Observer;
 
 public class Player implements Observer{
 	private String name;
-	
+
 	public Player(String name) {
 		this.name=name;
 	}
@@ -21,15 +21,15 @@ public class Player implements Observer{
 
 	@Override
 	public void help() {
-		
-		System.out.println("坚持住，" + this.name + "来救你！");  
+
+		System.out.println("鍧氭寔浣忥紝" + this.name + "鏉ユ晳浣狅紒");
 	}
 
 	@Override
 	public void beAttacked(AllyControlCenter acc) {
-		
-		System.out.println(this.name + "被攻击！");  
-        acc.notifyObserver(this);    
+
+		System.out.println(this.name + "琚敾鍑伙紒");
+		acc.notifyObserver(this);
 	}
 
 }

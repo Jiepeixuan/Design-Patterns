@@ -4,8 +4,8 @@ public class SpringComboBox implements ComboBox{
 
 	@Override
 	public void display() {
-		System.out.println("ÏÔÊ¾ÂÌÉ«±ß¿ò×éºÏ¿ò¡£"); 
-		
+		System.out.println("æ˜¾ç¤ºç»¿è‰²è¾¹æ¡†ç»„åˆæ¡†ã€‚");
+
 	}
 
 }

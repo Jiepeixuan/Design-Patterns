@@ -4,8 +4,8 @@ package com.pattern.design.SimpleFactory;
 public class Client {
 	public static void main(String[] args) {
 		Chart chart;
-		String type = XMLUtil.getChartType(); //读取配置文件中的参数  
-        chart = ChartFactory.getChart(type); //创建产品对象  
+		String type = XMLUtil.getChartType(); //璇诲彇閰嶇疆鏂囦欢涓殑鍙傛暟
+		chart = ChartFactory.getChart(type); //鍒涘缓浜у搧瀵硅薄
 		chart.display();
 	}
 }

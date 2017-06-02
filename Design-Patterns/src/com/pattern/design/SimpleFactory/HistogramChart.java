@@ -1,20 +1,20 @@
 package com.pattern.design.SimpleFactory;
 
 /**
-* <p>Title: HistogramChart</p>
-* <p>Description: Öù×´Í¼Àà£º¾ßÌå²úÆ·Àà </p> 
-* @author peixuan.xie
-* @date 2017Äê5ÔÂ25ÈÕÉÏÎç9:40:16
-*/
+ * <p>Title: HistogramChart</p>
+ * <p>Description: æŸ±çŠ¶å›¾ç±»ï¼šå…·ä½“äº§å“ç±» </p>
+ * @author peixuan.xie
+ * @date 2017å¹´5æœˆ25æ—¥ä¸Šåˆ9:40:16
+ */
 public class HistogramChart implements Chart{
 
 	public HistogramChart() {
-		System.out.println("´´½¨Öù×´Í¼£¡");
+		System.out.println("åˆ›å»ºæŸ±çŠ¶å›¾ï¼");
 	}
-	
+
 	@Override
 	public void display() {
-		System.out.println("ÏÔÊ¾Öù×´Í¼£¡");
+		System.out.println("æ˜¾ç¤ºæŸ±çŠ¶å›¾ï¼");
 	}
 
 }

@@ -2,16 +2,16 @@ package com.pattern.design.AbstractFactory;
 
 
 /**
-* <p>Title: SummerButton</p>
-* <p>Description: Summer°´Å¥Àà£º¾ßÌå²úÆ·</p> 
-* @author peixuan.xie
-* @date 2017Äê5ÔÂ26ÈÕÏÂÎç4:52:24
-*/
+ * <p>Title: SummerButton</p>
+ * <p>Description: SummeræŒ‰é’®ç±»ï¼šå…·ä½“äº§å“</p>
+ * @author peixuan.xie
+ * @date 2017å¹´5æœˆ26æ—¥ä¸‹åˆ4:52:24
+ */
 public class SummerButton implements Button {
 
 	@Override
 	public void display() {
-		System.out.println("ÏÔÊ¾Ç³À¶É«°´Å¥¡£");  
+		System.out.println("æ˜¾ç¤ºæµ…è“è‰²æŒ‰é’®ã€‚");
 
 	}
 

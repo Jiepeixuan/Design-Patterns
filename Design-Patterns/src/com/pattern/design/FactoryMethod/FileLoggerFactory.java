@@ -1,16 +1,16 @@
 package com.pattern.design.FactoryMethod;
 
 /**
-* <p>Title: FileLoggerFactory</p>
-* <p>Description: ÎÄ¼şÈÕÖ¾¼ÇÂ¼Æ÷¹¤³§Àà£º¾ßÌå¹¤³§ </p> 
-* @author peixuan.xie
-* @date 2017Äê5ÔÂ25ÈÕÉÏÎç10:15:57
-*/
+ * <p>Title: FileLoggerFactory</p>
+ * <p>Description: æ–‡ä»¶æ—¥å¿—è®°å½•å™¨å·¥å‚ç±»ï¼šå…·ä½“å·¥å‚ </p>
+ * @author peixuan.xie
+ * @date 2017å¹´5æœˆ25æ—¥ä¸Šåˆ10:15:57
+ */
 public class FileLoggerFactory implements LoggerFactory{
 
 	@Override
 	public Logger createLogger() {
-		System.out.println("´´½¨ÎÄ¼şÈÕÖ¾¹¤³§");
+		System.out.println("åˆ›å»ºæ–‡ä»¶æ—¥å¿—å·¥å‚");
 		Logger logger=new FileLogger();
 		return logger;
 	}

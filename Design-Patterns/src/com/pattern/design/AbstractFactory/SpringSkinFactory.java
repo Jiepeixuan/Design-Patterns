@@ -2,23 +2,23 @@ package com.pattern.design.AbstractFactory;
 
 
 /**
-* <p>Title: SpringSkinFactory</p>
-* <p>Description: SpringÆ¤·ô¹¤³§£º¾ßÌå¹¤³§</p> 
-* @author peixuan.xie
-* @date 2017Äê5ÔÂ26ÈÕÏÂÎç4:58:42
-*/
+ * <p>Title: SpringSkinFactory</p>
+ * <p>Description: Springçš®è‚¤å·¥å‚ï¼šå…·ä½“å·¥å‚</p>
+ * @author peixuan.xie
+ * @date 2017å¹´5æœˆ26æ—¥ä¸‹åˆ4:58:42
+ */
 public class SpringSkinFactory implements SkinFactory{
 
-	public Button createButton() {  
-        return new SpringButton();  
-    }  
+    public Button createButton() {
+        return new SpringButton();
+    }
 
-    public TextField createTextField() {  
-        return new SpringTextField();  
-    }  
+    public TextField createTextField() {
+        return new SpringTextField();
+    }
 
-    public ComboBox createComboBox() {  
-        return new SpringComboBox();  
-    }  
+    public ComboBox createComboBox() {
+        return new SpringComboBox();
+    }
 
 }

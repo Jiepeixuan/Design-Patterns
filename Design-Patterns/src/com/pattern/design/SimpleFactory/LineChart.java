@@ -2,20 +2,20 @@ package com.pattern.design.SimpleFactory;
 
 
 /**
-* <p>Title: LineChart</p>
-* <p>Description: ÕÛÏßÍ¼Àà£º¾ßÌå²úÆ·Àà  </p> 
-* @author peixuan.xie
-* @date 2017Äê5ÔÂ25ÈÕÉÏÎç9:44:02
-*/
+ * <p>Title: LineChart</p>
+ * <p>Description: æŠ˜çº¿å›¾ç±»ï¼šå…·ä½“äº§å“ç±»  </p>
+ * @author peixuan.xie
+ * @date 2017å¹´5æœˆ25æ—¥ä¸Šåˆ9:44:02
+ */
 public class LineChart implements Chart{
 
 	public LineChart() {
-		System.out.println("´´½¨ÕÛÏßÍ¼");
+		System.out.println("åˆ›å»ºæŠ˜çº¿å›¾");
 	}
-	
+
 	@Override
 	public void display() {
-		System.out.println("ÏÔÊ¾ÕÛÏßÍ¼");
+		System.out.println("æ˜¾ç¤ºæŠ˜çº¿å›¾");
 	}
 
 }

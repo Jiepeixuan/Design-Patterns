@@ -1,14 +1,14 @@
 package com.pattern.design.SimpleFactory;
 
-	
+
 
 /**
-* <p>Title: Chart</p>
-* <p>Description: ³éÏóÍ¼±í½Ó¿Ú£º³éÏó²úÆ·Àà</p> 
-* @author peixuan.xie
-* @date 2017Äê5ÔÂ25ÈÕÉÏÎç9:39:50
-*/
+ * <p>Title: Chart</p>
+ * <p>Description: æŠ½è±¡å›¾è¡¨æ¥å£ï¼šæŠ½è±¡äº§å“ç±»</p>
+ * @author peixuan.xie
+ * @date 2017å¹´5æœˆ25æ—¥ä¸Šåˆ9:39:50
+ */
 public interface Chart {
-	
+
 	public void display();
 }

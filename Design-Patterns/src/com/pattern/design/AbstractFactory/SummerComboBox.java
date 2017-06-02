@@ -4,8 +4,8 @@ public class SummerComboBox implements ComboBox{
 
 	@Override
 	public void display() {
-		System.out.println("ÏÔÊ¾À¶É«±ß¿ò×éºÏ¿ò¡£");
-		
+		System.out.println("æ˜¾ç¤ºè“è‰²è¾¹æ¡†ç»„åˆæ¡†ã€‚");
+
 	}
 
 }

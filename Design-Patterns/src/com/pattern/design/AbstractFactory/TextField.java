@@ -2,11 +2,11 @@ package com.pattern.design.AbstractFactory;
 
 
 /**
-* <p>Title: TextField</p>
-* <p>Description: ÎÄ±¾¿ò½Ó¿Ú£º³éÏó²úÆ· </p> 
-* @author peixuan.xie
-* @date 2017Äê5ÔÂ26ÈÕÏÂÎç4:53:28
-*/
+ * <p>Title: TextField</p>
+ * <p>Description: æ–‡æœ¬æ¡†æ¥å£ï¼šæŠ½è±¡äº§å“ </p>
+ * @author peixuan.xie
+ * @date 2017å¹´5æœˆ26æ—¥ä¸‹åˆ4:53:28
+ */
 public interface TextField {
-	public void display(); 
+	public void display();
 }

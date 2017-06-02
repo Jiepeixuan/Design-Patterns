@@ -2,19 +2,19 @@ package com.pattern.design.Singleton;
 
 
 /**
-* <p>Title: EagerSingleton</p>
-* <p>Description:¶öººÊ½µ¥Àı,ÔÚ¶¨Òå¾²Ì¬±äÁ¿µÄÊ±ºòÊµÀı»¯µ¥ÀıÀà£¬Òò´ËÔÚÀà¼ÓÔØµÄÊ±ºò¾ÍÒÑ¾­´´½¨ÁËµ¥Àı¶ÔÏó </p> 
-* @author peixuan.xie
-* @date 2017Äê5ÔÂ26ÈÕÏÂÎç5:17:18
-*/
+ * <p>Title: EagerSingleton</p>
+ * <p>Description:é¥¿æ±‰å¼å•ä¾‹,åœ¨å®šä¹‰é™æ€å˜é‡çš„æ—¶å€™å®ä¾‹åŒ–å•ä¾‹ç±»ï¼Œå› æ­¤åœ¨ç±»åŠ è½½çš„æ—¶å€™å°±å·²ç»åˆ›å»ºäº†å•ä¾‹å¯¹è±¡ </p>
+ * @author peixuan.xie
+ * @date 2017å¹´5æœˆ26æ—¥ä¸‹åˆ5:17:18
+ */
 public class EagerSingleton {
 
 	private static final EagerSingleton instance=new EagerSingleton();
-	
+
 	private EagerSingleton() {
-		
+
 	}
-	
+
 	public static EagerSingleton getInstance(){
 		return instance;
 	}

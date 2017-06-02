@@ -2,13 +2,13 @@ package com.pattern.design.AbstractFactory;
 
 
 /**
-* <p>Title: SkinFactory</p>
-* <p>Description: ½çÃæÆ¤·ô¹¤³§½Ó¿Ú£º³éÏó¹¤³§ </p> 
-* @author peixuan.xie
-* @date 2017Äê5ÔÂ26ÈÕÏÂÎç4:57:46
-*/
+ * <p>Title: SkinFactory</p>
+ * <p>Description: ç•Œé¢çš®è‚¤å·¥å‚æ¥å£ï¼šæŠ½è±¡å·¥å‚ </p>
+ * @author peixuan.xie
+ * @date 2017å¹´5æœˆ26æ—¥ä¸‹åˆ4:57:46
+ */
 public interface SkinFactory {
-	public Button createButton();  
-    public TextField createTextField();  
-    public ComboBox createComboBox();  
+    public Button createButton();
+    public TextField createTextField();
+    public ComboBox createComboBox();
 }

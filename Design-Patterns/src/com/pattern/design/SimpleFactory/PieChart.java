@@ -1,21 +1,21 @@
 package com.pattern.design.SimpleFactory;
 
 /**
-* <p>Title: PieChart</p>
-* <p>Description: ±ı×´Í¼Àà£º¾ßÌå²úÆ·Àà  </p> 
-* @author peixuan.xie
-* @date 2017Äê5ÔÂ25ÈÕÉÏÎç9:41:57
-*/
+ * <p>Title: PieChart</p>
+ * <p>Description: é¥¼çŠ¶å›¾ç±»ï¼šå…·ä½“äº§å“ç±»  </p>
+ * @author peixuan.xie
+ * @date 2017å¹´5æœˆ25æ—¥ä¸Šåˆ9:41:57
+ */
 public class PieChart implements Chart{
-	
+
 	public PieChart() {
-		System.out.println("´´½¨±ı×´Í¼");
+		System.out.println("åˆ›å»ºé¥¼çŠ¶å›¾");
 	}
 
 	@Override
 	public void display() {
 
-		System.out.println("ÏÔÊ¾±ı×´Í¼");
+		System.out.println("æ˜¾ç¤ºé¥¼çŠ¶å›¾");
 	}
 
 }

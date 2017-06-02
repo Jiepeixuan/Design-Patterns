@@ -1,27 +1,27 @@
 package com.pattern.design.SimpleFactory;
 
 /**
-* <p>Title: ChartFactory</p>
-* <p>Description: Í¼±í¹¤³§Àà£º¹¤³§Àà  </p> 
-* @author peixuan.xie
-* @date 2017Äê5ÔÂ25ÈÕÉÏÎç9:49:09
-*/
+ * <p>Title: ChartFactory</p>
+ * <p>Description: å›¾è¡¨å·¥å‚ç±»ï¼šå·¥å‚ç±»  </p>
+ * @author peixuan.xie
+ * @date 2017å¹´5æœˆ25æ—¥ä¸Šåˆ9:49:09
+ */
 public class ChartFactory {
 
 	public static Chart getChart(String type){
 		Chart chart=null;
-		
+
 		if(type.equalsIgnoreCase("histogram")){
 			chart=new HistogramChart();
-			System.out.println("³õÊ¼»¯ÉèÖÃÖù×´Í¼£¡");
+			System.out.println("åˆå§‹åŒ–è®¾ç½®æŸ±çŠ¶å›¾ï¼");
 		}else if (type.equalsIgnoreCase("pie")) {
 			chart=new PieChart();
-			System.out.println("³õÊ¼»¯ÉèÖÃ±ı×´Í¼£¡");
+			System.out.println("åˆå§‹åŒ–è®¾ç½®é¥¼çŠ¶å›¾ï¼");
 		}else if (type.equalsIgnoreCase("line")) {
 			chart=new LineChart();
-			System.out.println("³õÊ¼»¯ÉèÖÃÕÛÏßÍ¼£¡");
+			System.out.println("åˆå§‹åŒ–è®¾ç½®æŠ˜çº¿å›¾ï¼");
 		}
-		
+
 		return chart;
 	}
 }

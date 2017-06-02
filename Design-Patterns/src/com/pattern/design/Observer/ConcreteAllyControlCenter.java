@@ -1,33 +1,33 @@
 package com.pattern.design.Observer;
 
 /**
-* <p>Title: ConcreteAllyControlCenter</p>
-* <p>Description: ¾ßÌåÕ½¶Ó¿ØÖÆÖĞĞÄÀà£º¾ßÌåÄ¿±êÀà </p> 
-* @author peixuan.xie
-* @date 2017Äê5ÔÂ27ÈÕÉÏÎç9:58:50
-*/
+ * <p>Title: ConcreteAllyControlCenter</p>
+ * <p>Description: å…·ä½“æˆ˜é˜Ÿæ§åˆ¶ä¸­å¿ƒç±»ï¼šå…·ä½“ç›®æ ‡ç±» </p>
+ * @author peixuan.xie
+ * @date 2017å¹´5æœˆ27æ—¥ä¸Šåˆ9:58:50
+ */
 public class ConcreteAllyControlCenter extends AllyControlCenter {
-	
-	public ConcreteAllyControlCenter(String allyName) {  
-        System.out.println(allyName + "Õ½¶Ó×é½¨³É¹¦£¡");  
-        System.out.println("----------------------------");  
-        this.allyName = allyName;  
-    }  
+
+	public ConcreteAllyControlCenter(String allyName) {
+		System.out.println(allyName + "æˆ˜é˜Ÿç»„å»ºæˆåŠŸï¼");
+		System.out.println("----------------------------");
+		this.allyName = allyName;
+	}
 
 	@Override
 	public void notifyObserver(Player player) {
-		
+
 		if(players.contains(player)){
-    		System.out.println(this.allyName + "Õ½¶Ó½ô¼±Í¨Öª£¬ÃËÓÑ" + player.getName() + "ÔâÊÜµĞÈË¹¥»÷£¡");  
-    	}else {
-    		System.out.println(this.allyName + "Õ½¶Ó½ô¼±Í¨Öª£¬Ç°ÃËÓÑ" + player.getName() + "ÔâÊÜµĞÈË¹¥»÷£¡"); 
+			System.out.println(this.allyName + "æˆ˜é˜Ÿç´§æ€¥é€šçŸ¥ï¼Œç›Ÿå‹" + player.getName() + "é­å—æ•Œäººæ”»å‡»ï¼");
+		}else {
+			System.out.println(this.allyName + "æˆ˜é˜Ÿç´§æ€¥é€šçŸ¥ï¼Œå‰ç›Ÿå‹" + player.getName() + "é­å—æ•Œäººæ”»å‡»ï¼");
 		}
-        //±éÀú¹Û²ìÕß¼¯ºÏ£¬µ÷ÓÃÃ¿Ò»¸öÃËÓÑ£¨×Ô¼º³ıÍâ£©µÄÖ§Ô®·½·¨  
-        for(Object obs : players) {
-        	if (!((Observer)obs).getName().equalsIgnoreCase(player.getName())) {  
-                ((Observer)obs).help();  
-            }  
-        }   
+		//éå†è§‚å¯Ÿè€…é›†åˆï¼Œè°ƒç”¨æ¯ä¸€ä¸ªç›Ÿå‹ï¼ˆè‡ªå·±é™¤å¤–ï¼‰çš„æ”¯æ´æ–¹æ³•
+		for(Object obs : players) {
+			if (!((Observer)obs).getName().equalsIgnoreCase(player.getName())) {
+				((Observer)obs).help();
+			}
+		}
 	}
 
 }

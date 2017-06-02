@@ -1,17 +1,17 @@
 package com.pattern.design.FactoryMethod;
 
 /**
-* <p>Title: FileLogger</p>
-* <p>Description: Êı¾İ¿âÈÕÖ¾¼ÇÂ¼Æ÷£º¾ßÌå²úÆ·</p> 
-* @author peixuan.xie
-* @date 2017Äê5ÔÂ25ÈÕÉÏÎç10:10:04
-*/
+ * <p>Title: FileLogger</p>
+ * <p>Description: æ•°æ®åº“æ—¥å¿—è®°å½•å™¨ï¼šå…·ä½“äº§å“</p>
+ * @author peixuan.xie
+ * @date 2017å¹´5æœˆ25æ—¥ä¸Šåˆ10:10:04
+ */
 public class FileLogger implements Logger{
 
 	@Override
 	public void writeLog() {
 
-		System.out.println("ÎÄ¼şÈÕÖ¾¼ÇÂ¼¡£");
+		System.out.println("æ–‡ä»¶æ—¥å¿—è®°å½•ã€‚");
 	}
 
 }

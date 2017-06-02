@@ -2,16 +2,16 @@ package com.pattern.design.AbstractFactory;
 
 
 /**
-* <p>Title: SpringButton</p>
-* <p>Description: Spring°´Å¥Àà£º¾ßÌå²úÆ· </p> 
-* @author peixuan.xie
-* @date 2017Äê5ÔÂ26ÈÕÏÂÎç4:51:46
-*/
+ * <p>Title: SpringButton</p>
+ * <p>Description: SpringæŒ‰é’®ç±»ï¼šå…·ä½“äº§å“ </p>
+ * @author peixuan.xie
+ * @date 2017å¹´5æœˆ26æ—¥ä¸‹åˆ4:51:46
+ */
 public class SpringButton implements Button {
 
 	@Override
 	public void display() {
-		System.out.println("ÏÔÊ¾Ç³ÂÌÉ«°´Å¥¡£");
+		System.out.println("æ˜¾ç¤ºæµ…ç»¿è‰²æŒ‰é’®ã€‚");
 
 	}
 

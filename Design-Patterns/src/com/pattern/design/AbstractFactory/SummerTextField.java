@@ -2,17 +2,17 @@ package com.pattern.design.AbstractFactory;
 
 
 /**
-* <p>Title: SummerTextField</p>
-* <p>Description: SummerÎÄ±¾¿òÀà£º¾ßÌå²úÆ· </p> 
-* @author peixuan.xie
-* @date 2017Äê5ÔÂ26ÈÕÏÂÎç4:55:08
-*/
+ * <p>Title: SummerTextField</p>
+ * <p>Description: Summeræ–‡æœ¬æ¡†ç±»ï¼šå…·ä½“äº§å“ </p>
+ * @author peixuan.xie
+ * @date 2017å¹´5æœˆ26æ—¥ä¸‹åˆ4:55:08
+ */
 public class SummerTextField implements TextField{
 
 	@Override
 	public void display() {
-		System.out.println("ÏÔÊ¾À¶É«±ß¿òÎÄ±¾¿ò¡£");  
-		
+		System.out.println("æ˜¾ç¤ºè“è‰²è¾¹æ¡†æ–‡æœ¬æ¡†ã€‚");
+
 	}
 
 }

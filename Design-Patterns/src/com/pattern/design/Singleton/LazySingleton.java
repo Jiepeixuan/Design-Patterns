@@ -2,19 +2,19 @@ package com.pattern.design.Singleton;
 
 
 /**
-* <p>Title: LazySingleton</p>
-* <p>Description: ¼ÙÈçÔÚÄ³Ò»Ë²¼äÏß³ÌAºÍÏß³ÌB¶¼ÔÚµ÷ÓÃgetInstance()·½·¨£¬´ËÊ±instance¶ÔÏóÎªnullÖµ£¬¾ùÄÜÍ¨¹ıinstance == nullµÄÅĞ¶Ï¡£ÓÉÓÚÊµÏÖÁËsynchronized¼ÓËø»úÖÆ£¬Ïß³ÌA½øÈësynchronizedËø¶¨µÄ´úÂëÖĞÖ´ĞĞÊµÀı´´½¨´úÂë£¬Ïß³ÌB´¦ÓÚÅÅ¶ÓµÈ´ı×´Ì¬£¬±ØĞëµÈ´ıÏß³ÌAÖ´ĞĞÍê±Ïºó²Å¿ÉÒÔ½øÈësynchronizedËø¶¨´úÂë¡£µ«µ±AÖ´ĞĞÍê±ÏÊ±£¬Ïß³ÌB²¢²»ÖªµÀÊµÀıÒÑ¾­´´½¨£¬½«¼ÌĞø´´½¨ĞÂµÄÊµÀı£¬µ¼ÖÂ²úÉú¶à¸öµ¥Àı¶ÔÏó£¬Î¥±³µ¥ÀıÄ£Ê½µÄÉè¼ÆË¼Ïë£¬Òò´ËĞèÒª½øĞĞ½øÒ»²½¸Ä½ø£¬ÔÚsynchronizedÖĞÔÙ½øĞĞÒ»´Î(instance == null)ÅĞ¶Ï£¬ÕâÖÖ·½Ê½³ÆÎªË«ÖØ¼ì²éËø¶¨(Double-Check Locking)</p> 
-* @author peixuan.xie
-* @date 2017Äê5ÔÂ26ÈÕÏÂÎç5:20:22
-*/
+ * <p>Title: LazySingleton</p>
+ * <p>Description: å‡å¦‚åœ¨æŸä¸€ç¬é—´çº¿ç¨‹Aå’Œçº¿ç¨‹Béƒ½åœ¨è°ƒç”¨getInstance()æ–¹æ³•ï¼Œæ­¤æ—¶instanceå¯¹è±¡ä¸ºnullå€¼ï¼Œå‡èƒ½é€šè¿‡instance == nullçš„åˆ¤æ–­ã€‚ç”±äºå®ç°äº†synchronizedåŠ é”æœºåˆ¶ï¼Œçº¿ç¨‹Aè¿›å…¥synchronizedé”å®šçš„ä»£ç ä¸­æ‰§è¡Œå®ä¾‹åˆ›å»ºä»£ç ï¼Œçº¿ç¨‹Bå¤„äºæ’é˜Ÿç­‰å¾…çŠ¶æ€ï¼Œå¿…é¡»ç­‰å¾…çº¿ç¨‹Aæ‰§è¡Œå®Œæ¯•åæ‰å¯ä»¥è¿›å…¥synchronizedé”å®šä»£ç ã€‚ä½†å½“Aæ‰§è¡Œå®Œæ¯•æ—¶ï¼Œçº¿ç¨‹Bå¹¶ä¸çŸ¥é“å®ä¾‹å·²ç»åˆ›å»ºï¼Œå°†ç»§ç»­åˆ›å»ºæ–°çš„å®ä¾‹ï¼Œå¯¼è‡´äº§ç”Ÿå¤šä¸ªå•ä¾‹å¯¹è±¡ï¼Œè¿èƒŒå•ä¾‹æ¨¡å¼çš„è®¾è®¡æ€æƒ³ï¼Œå› æ­¤éœ€è¦è¿›è¡Œè¿›ä¸€æ­¥æ”¹è¿›ï¼Œåœ¨synchronizedä¸­å†è¿›è¡Œä¸€æ¬¡(instance == null)åˆ¤æ–­ï¼Œè¿™ç§æ–¹å¼ç§°ä¸ºåŒé‡æ£€æŸ¥é”å®š(Double-Check Locking)</p>
+ * @author peixuan.xie
+ * @date 2017å¹´5æœˆ26æ—¥ä¸‹åˆ5:20:22
+ */
 public class LazySingleton {
-	
+
 	private volatile static LazySingleton instance=null;
-	
+
 	private LazySingleton(){
-		
+
 	}
-	
+
 	public static LazySingleton getInstance(){
 		if(instance==null){
 			synchronized (LazySingleton.class) {
@@ -25,5 +25,5 @@ public class LazySingleton {
 		}
 		return instance;
 	}
-	
+
 }

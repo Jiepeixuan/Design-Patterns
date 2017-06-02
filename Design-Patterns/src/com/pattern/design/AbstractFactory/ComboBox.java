@@ -2,11 +2,11 @@ package com.pattern.design.AbstractFactory;
 
 
 /**
-* <p>Title: ComboBox</p>
-* <p>Description: ×éºÏ¿ò½Ó¿Ú£º³éÏó²úÆ· </p> 
-* @author peixuan.xie
-* @date 2017Äê5ÔÂ26ÈÕÏÂÎç4:55:39
-*/
+ * <p>Title: ComboBox</p>
+ * <p>Description: ç»„åˆæ¡†æ¥å£ï¼šæŠ½è±¡äº§å“ </p>
+ * @author peixuan.xie
+ * @date 2017å¹´5æœˆ26æ—¥ä¸‹åˆ4:55:39
+ */
 public interface ComboBox {
-	public void display(); 
+	public void display();
 }

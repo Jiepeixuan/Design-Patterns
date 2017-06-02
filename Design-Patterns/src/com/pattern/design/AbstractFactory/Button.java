@@ -2,11 +2,11 @@ package com.pattern.design.AbstractFactory;
 
 
 /**
-* <p>Title: Button</p>
-* <p>Description: //°´Å¥½Ó¿Ú£º³éÏó²úÆ· </p> 
-* @author peixuan.xie
-* @date 2017Äê5ÔÂ26ÈÕÏÂÎç4:50:13
-*/
+ * <p>Title: Button</p>
+ * <p>Description: //æŒ‰é’®æ¥å£ï¼šæŠ½è±¡äº§å“ </p>
+ * @author peixuan.xie
+ * @date 2017å¹´5æœˆ26æ—¥ä¸‹åˆ4:50:13
+ */
 public interface Button {
 
 	public void display();

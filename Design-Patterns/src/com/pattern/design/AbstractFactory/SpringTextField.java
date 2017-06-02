@@ -2,17 +2,17 @@ package com.pattern.design.AbstractFactory;
 
 
 /**
-* <p>Title: SpringTextField</p>
-* <p>Description: SpringÎÄ±¾¿òÀà£º¾ßÌå²úÆ·</p> 
-* @author peixuan.xie
-* @date 2017Äê5ÔÂ26ÈÕÏÂÎç4:54:38
-*/
+ * <p>Title: SpringTextField</p>
+ * <p>Description: Springæ–‡æœ¬æ¡†ç±»ï¼šå…·ä½“äº§å“</p>
+ * @author peixuan.xie
+ * @date 2017å¹´5æœˆ26æ—¥ä¸‹åˆ4:54:38
+ */
 public class SpringTextField implements TextField{
 
 	@Override
 	public void display() {
-		System.out.println("ÏÔÊ¾ÂÌÉ«±ß¿òÎÄ±¾¿ò¡£");  
-		
+		System.out.println("æ˜¾ç¤ºç»¿è‰²è¾¹æ¡†æ–‡æœ¬æ¡†ã€‚");
+
 	}
 
 }

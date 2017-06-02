@@ -2,15 +2,15 @@ package com.pattern.design.Observer;
 
 
 /**
-* <p>Title: Observer</p>
-* <p>Description: ³éÏó¹Û²ìÀà</p> 
-* @author peixuan.xie
-* @date 2017Äê5ÔÂ27ÈÕÉÏÎç9:46:47
-*/
+ * <p>Title: Observer</p>
+ * <p>Description: æŠ½è±¡è§‚å¯Ÿç±»</p>
+ * @author peixuan.xie
+ * @date 2017å¹´5æœˆ27æ—¥ä¸Šåˆ9:46:47
+ */
 public interface Observer {
-	
+
 	public String getName();
 	public void setName(String name);
 	public void help();
-	public void beAttacked(AllyControlCenter acc); //ÉùÃ÷ÔâÊÜ¹¥»÷·½·¨  
+	public void beAttacked(AllyControlCenter acc); //å£°æ˜é­å—æ”»å‡»æ–¹æ³•
 }

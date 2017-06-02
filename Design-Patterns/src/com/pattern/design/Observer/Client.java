@@ -2,28 +2,28 @@ package com.pattern.design.Observer;
 
 public class Client {
 
-	public static void main(String[] args) {
-		AllyControlCenter acc;  
-        acc = new ConcreteAllyControlCenter("½ğÓ¹ÈºÏÀ");  
+        public static void main(String[] args) {
+                AllyControlCenter acc;
+                acc = new ConcreteAllyControlCenter("é‡‘åº¸ç¾¤ä¾ ");
 
-        //¶¨ÒåËÄ¸ö¹Û²ìÕß¶ÔÏó  
-        Observer player1,player2,player3,player4;  
+                //å®šä¹‰å››ä¸ªè§‚å¯Ÿè€…å¯¹è±¡
+                Observer player1,player2,player3,player4;
 
-        player1 = new Player("Ñî¹ı");  
-        acc.join(player1);  
+                player1 = new Player("æ¨è¿‡");
+                acc.join(player1);
 
-        player2 = new Player("Áîºü³å");  
-        acc.join(player2);  
+                player2 = new Player("ä»¤ç‹å†²");
+                acc.join(player2);
 
-        player3 = new Player("ÕÅÎŞ¼É");  
-        acc.join(player3);  
+                player3 = new Player("å¼ æ— å¿Œ");
+                acc.join(player3);
 
-        player4 = new Player("¶ÎÓş");  
-        acc.join(player4);  
+                player4 = new Player("æ®µèª‰");
+                acc.join(player4);
 
-        //Ä³³ÉÔ±ÔâÊÜ¹¥»÷  
-        player1.beAttacked(acc); 
-        acc.quit(player1);
-        player1.beAttacked(acc); 
-	}
+                //æŸæˆå‘˜é­å—æ”»å‡»
+                player1.beAttacked(acc);
+                acc.quit(player1);
+                player1.beAttacked(acc);
+        }
 }

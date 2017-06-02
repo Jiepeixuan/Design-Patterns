@@ -4,32 +4,32 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
-* <p>Title: AllyControlCenter</p>
-* <p>Description: Õ½¶Ó¿ØÖÆÖĞĞÄÀà£ºÄ¿±êÀà</p> 
-* @author peixuan.xie
-* @date 2017Äê5ÔÂ27ÈÕÉÏÎç9:48:30
-*/
+ * <p>Title: AllyControlCenter</p>
+ * <p>Description: æˆ˜é˜Ÿæ§åˆ¶ä¸­å¿ƒç±»ï¼šç›®æ ‡ç±»</p>
+ * @author peixuan.xie
+ * @date 2017å¹´5æœˆ27æ—¥ä¸Šåˆ9:48:30
+ */
 abstract class AllyControlCenter {
 
-	protected String allyName;//Õ½¶ÓÃû³Æ
+	protected String allyName;//æˆ˜é˜Ÿåç§°
 	protected Set<Observer> players=new HashSet<Observer>();
-	
+
 	public HashSet<Observer> getPlayers() {
 		return (HashSet<Observer>) players;
 	}
 	public void setPlayers(HashSet<Observer> players) {
 		this.players = players;
 	}
-	
+
 	public void join(Observer observer) {
-		System.out.println(observer.getName() + "¼ÓÈë" + this.allyName + "Õ½¶Ó£¡");
+		System.out.println(observer.getName() + "åŠ å…¥" + this.allyName + "æˆ˜é˜Ÿï¼");
 		players.add(observer);
 	}
-	
+
 	public void quit(Observer observer) {
-		System.out.println(observer.getName() + "ÍË³ö" + this.allyName + "Õ½¶Ó£¡"); 
+		System.out.println(observer.getName() + "é€€å‡º" + this.allyName + "æˆ˜é˜Ÿï¼");
 		players.remove(observer);
 	}
-	
+
 	public abstract void notifyObserver(Player player);
 }

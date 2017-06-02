@@ -1,11 +1,11 @@
 package com.pattern.design.FactoryMethod;
 
 /**
-* <p>Title: Logger</p>
-* <p>Description: ÈÕÖ¾¼ÇÂ¼Æ÷½Ó¿Ú£º³éÏó²úÆ· </p> 
-* @author peixuan.xie
-* @date 2017Äê5ÔÂ25ÈÕÉÏÎç10:08:40
-*/
+ * <p>Title: Logger</p>
+ * <p>Description: æ—¥å¿—è®°å½•å™¨æ¥å£ï¼šæŠ½è±¡äº§å“ </p>
+ * @author peixuan.xie
+ * @date 2017å¹´5æœˆ25æ—¥ä¸Šåˆ10:08:40
+ */
 public interface Logger {
 	public void writeLog();
 }
