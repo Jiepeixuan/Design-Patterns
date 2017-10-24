@@ -12,5 +12,6 @@ public class SingleThreadExecutor {
         for(int i = 0; i < 5; i++)
             executorService.execute(new LiftOff());
         executorService.shutdown();
+        System.out.println("waiting for LiftOff");
     }
 }

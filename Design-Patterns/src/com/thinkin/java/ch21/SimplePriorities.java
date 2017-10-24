@@ -37,10 +37,10 @@ public class SimplePriorities implements Runnable {
     }
 
     public static void main(String[] args) {
-        ExecutorService executorService= Executors.newCachedThreadPool();
-        for (int i = 0; i < 5; i++) {
+        ExecutorService executorService = Executors.newCachedThreadPool();
+        for (int i = 0; i < 5; i++)
             executorService.execute(new SimplePriorities(Thread.MIN_PRIORITY));
-        }
+
         executorService.execute(new SimplePriorities(Thread.MAX_PRIORITY));
         executorService.shutdown();
     }

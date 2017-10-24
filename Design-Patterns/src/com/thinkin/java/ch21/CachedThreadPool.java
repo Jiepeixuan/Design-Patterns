@@ -11,5 +11,6 @@ public class CachedThreadPool {
             executorService.execute(new LiftOff());
         }
         executorService.shutdown();
+        System.out.println("waiting for LiftOff");
     }
 }
