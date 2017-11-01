@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Created by peixuan.xie on 2017/9/1.
  */
-public class _412_Fizz_Buzz {
+public class __412_Fizz_Buzz {
 
 
     /*

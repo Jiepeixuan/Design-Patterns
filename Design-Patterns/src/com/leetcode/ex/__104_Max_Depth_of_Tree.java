@@ -6,7 +6,17 @@ import com.leetcode.struct.TreeNode;
 /**
  * Created by peixuan.xie on 2017/9/1.
  */
-public class _104_Max_Depth_of_Tree {
+public class __104_Max_Depth_of_Tree {
+
+    /**
+     * @deprecated
+     *              Given a binary tree, find its maximum depth.
+     *
+     *              对左右子树使用递归
+     * @param root
+     * @return
+     */
+
     public int maxDepth(TreeNode root) {
         if (root == null)
             return 0;
