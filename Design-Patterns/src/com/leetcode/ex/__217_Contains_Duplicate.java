@@ -6,7 +6,15 @@ import java.util.Set;
 /**
  * Created by peixuan.xie on 2017/9/5.
  */
-public class _217_Contains_Duplicate {
+public class __217_Contains_Duplicate {
+
+    /**
+     * @param nums
+     * @return
+     * @deprecated Given an array of integers, find if the array contains any duplicates. Your function should return true if any value appears at least twice in the array, and it should return false if every element is distinct.
+     * <p>
+     * 判断list 是否包含重复数据
+     */
 
     public boolean containsDuplicate(int[] nums) {
 
@@ -20,7 +28,6 @@ public class _217_Contains_Duplicate {
                 }
             }
         }
-
         return false;
     }
 }
