@@ -48,7 +48,7 @@ public class __13_Roman_To_Integer {
         return 0;
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         System.out.println(romanToInteger("DCXXI"));
     }
 
