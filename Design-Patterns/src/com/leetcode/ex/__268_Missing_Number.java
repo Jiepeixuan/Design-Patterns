@@ -3,7 +3,7 @@ package com.leetcode.ex;
 /**
  * Created by peixuan.xie on 2017/9/6.
  */
-public class _268_Missing_Number {
+public class __268_Missing_Number {
 
     /*
     *
